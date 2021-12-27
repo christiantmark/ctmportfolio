@@ -331,3 +331,22 @@ section {
         transform: translate(234px, 790px);
     }
 }
+
+  .container {
+      width: 95%;
+      max-width: 1160px;
+      margin: auto;
+  }
+  .animated-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+  }
+  h1 {
+      color: white;
+      font-weight: 500;
+  }
+  span#words {
+      font-weight: bolder;
+  }
