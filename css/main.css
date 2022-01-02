@@ -439,3 +439,7 @@ span#words {
       left: 170px; */
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
