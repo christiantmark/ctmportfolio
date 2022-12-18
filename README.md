@@ -1,3 +1,3 @@
 # ctmportfolio
 Currently hosted on Netlify  
-Come check it out [christiantmark.netlify.app]!
+Come check it out [here](https://christiantmark.netlify.app)!
