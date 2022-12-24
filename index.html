@@ -552,6 +552,44 @@
             <div class="portfolio-container transition3">
                 <div class="portfolio-left">
                     <div class="inner">
+                        <p class="subtitle">Gaming with Augmented Reality</p>
+                        <a href="https://github.com/Hack4Impact-Boston-University" class="featured-title">PairsAR</a>
+                        <!-- <p class="featured-title">Ocean Blue</p> -->
+                        <p class="featured-desc">A fun, one-versus-one memory game developed in Swift for IOS mobile devices. Players take turns flipping two cards to pair a match of objects together. The player with the most pairs at the end of the game wins!
+                        </p>
+                    </div>
+                </div>
+                <a><img id="oceanblueImg" src="images/PairsAR.jpg" alt="Swift"></a>
+                <!-- added for modal -->
+                <div id="myModal" class="modal">
+                    <span class="close"> &times;</span>
+                    <img class="modal-content" id="img">
+                    <div id="caption"></div>
+                </div>
+
+                <script>
+                    var modal = document.getElementById("myModal");
+                    var img = document.getElementById("oceanblueImg");
+                    var modalImg = document.getElementById("img");
+                    var captionText = document.getElementById("caption");
+
+                    img.onclick = function() {
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+
+                    var exit = document.getElementsByClassName("close")[0];
+                    exit.onclick = function() {
+                        modal.style.display = "none";
+                    }
+                </script>
+                <!-- added for modal -->
+            </div>
+
+            <div class="portfolio-container transition3">
+                <div class="portfolio-left">
+                    <div class="inner">
                         <p class="subtitle">Keeping the West Coast Clean</p>
                         <a href="https://github.com/Hack4Impact-Boston-University" class="featured-title">Ocean Blue</a>
                         <!-- <p class="featured-title">Ocean Blue</p> -->
