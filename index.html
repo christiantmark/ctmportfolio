@@ -248,7 +248,7 @@
             <div class="left">
                 <div class="inner transition2">
                     <p class="subtitle">Featured Project</p>
-                    <a href="https://github.com/christiantmark/ProctorA.I" class="featured-title">Beach Buddies</a>
+                    <a href="https://github.com/christiantmark/Beach-Buddies" class="featured-title">Beach Buddies</a>
                     <p class="featured-desc">Progressive web application leveraging geolocation tracking to engage volunteers in freelance beach cleanups and accredit
                         users through service hour certificates. Designed frontend using HTML, CSS, Material UI, and Mapbox GL with a backend hosted on Firebase. Winner of Judge’s Choice Award at BU Spark! 2022
 
@@ -562,8 +562,45 @@
             <div class="portfolio-container transition3">
                 <div class="portfolio-left">
                     <div class="inner">
+                        <p class="subtitle">Never Miss a Song</p>
+                        <a href="https://drive.google.com/drive/u/3/folders/1jtiv9TSKUMwGyDuEWEIDRJ5Y3NwzZfT8" class="featured-title">That's My Jam!</a>
+                        <p class="featured-desc">Prototype feature within the X1 TV box which streamlines Spotify and Timeline API metadata of a movie/episode. Assembled frontend visualization using React and Lightning SDK. Configured OAuth tokens with Spotify API.
+                        </p>
+                    </div>
+                </div>
+                <a><img id="oceanblueImg" src="images/That'sMyJam!.png" alt="React, Lightning SDK, Spotify API"></a>
+                <!-- added for modal -->
+                <div id="myModal" class="modal">
+                    <span class="close"> &times;</span>
+                    <img class="modal-content" id="img">
+                    <div id="caption"></div>
+                </div>
+
+                <script>
+                    var modal = document.getElementById("myModal");
+                    var img = document.getElementById("oceanblueImg");
+                    var modalImg = document.getElementById("img");
+                    var captionText = document.getElementById("caption");
+
+                    img.onclick = function() {
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+
+                    var exit = document.getElementsByClassName("close")[0];
+                    exit.onclick = function() {
+                        modal.style.display = "none";
+                    }
+                </script>
+                <!-- added for modal -->
+            </div>
+
+            <div class="portfolio-container transition3">
+                <div class="portfolio-left">
+                    <div class="inner">
                         <p class="subtitle">Study Sessions Made Easy</p>
-                        <a href="https://github.com/Hack4Impact-Boston-University" class="featured-title">Proctor A.I</a>
+                        <a href="https://github.com/christiantmark/ProctorA.I" class="featured-title">Proctor A.I</a>
                         <!-- <p class="featured-title">Ocean Blue</p> -->
                         <p class="featured-desc">A ReactJS application which alerts users when looking away from their computers or picking up their phone during a timed study session. Utilizes the CocoSSD object detection API to create an image classification model that achieved
                         95% accuracy.
@@ -571,6 +608,44 @@
                     </div>
                 </div>
                 <a><img id="oceanblueImg" src="images/Proctor A.I screenshot.png" alt="TensorFlow, CocoSSD"></a>
+                <!-- added for modal -->
+                <div id="myModal" class="modal">
+                    <span class="close"> &times;</span>
+                    <img class="modal-content" id="img">
+                    <div id="caption"></div>
+                </div>
+
+                <script>
+                    var modal = document.getElementById("myModal");
+                    var img = document.getElementById("oceanblueImg");
+                    var modalImg = document.getElementById("img");
+                    var captionText = document.getElementById("caption");
+
+                    img.onclick = function() {
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+
+                    var exit = document.getElementsByClassName("close")[0];
+                    exit.onclick = function() {
+                        modal.style.display = "none";
+                    }
+                </script>
+                <!-- added for modal -->
+            </div>
+
+            <div class="portfolio-container transition3">
+                <div class="portfolio-left">
+                    <div class="inner">
+                        <p class="subtitle">Join the Masquerade</p>
+                        <a href="https://github.com/christiantmark/Mardi-Gras-Masks-AR" class="featured-title">Mardi Gras Masks</a>
+                        <!-- <p class="featured-title">Ocean Blue</p> -->
+                        <p class="featured-desc">A Mardi Gras Masquerade using FaceAR and echo3D. User shuffles between 3 masks by clicking the screen. Underneath the camera canvas is a reset button that will reset to the first mask. Which Mardi Gras mask will you get?
+                        </p>
+                    </div>
+                </div>
+                <a><img id="oceanblueImg" src="images/echo3Dmaskdemo.png" alt="ReactJS"></a>
                 <!-- added for modal -->
                 <div id="myModal" class="modal">
                     <span class="close"> &times;</span>
